@@ -1,0 +1,12 @@
+.headerComp {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #1d1d1d;
+    height: 100%;
+}
+.headerComp div {
+    margin: 2% 1%;
+    font-size: 1.5em;
+    color: white;
+}
