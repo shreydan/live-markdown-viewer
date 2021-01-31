@@ -1,0 +1,17 @@
+#item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 5% 0 5% 0;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: white;
+}
+#item:hover {
+    background-color: #181818 !important;
+}
+#item div {
+    padding-left: 5%;
+}
