@@ -1,1 +1,43 @@
-.ToolbarComp {}
+.ToolbarComp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #202020;
+    padding: 1%;
+}
+#pageTitle {
+    flex: 1;
+    color: rgb(230, 230, 230);
+    font-size: 1.5em;
+}
+#editBtn {
+    border-radius: 5px;
+    padding: 0.5%;
+    background: #1d1d1d;
+    color: rgb(230, 230, 230);
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    margin-right: 0.5%;
+}
+#editBtn:hover {
+    background: rgb(230, 230, 230);
+    color: #1d1d1d;
+}
+
+#delBtn {
+    border-radius: 5px;
+    padding: 0.5%;
+    color: rgb(230, 230, 230);
+    background: rgb(247, 75, 75);
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    margin-left: 0.5%;
+}
+#delBtn:hover {
+    color: rgb(230, 230, 230);
+    background: rgb(230, 40, 40);
+}
