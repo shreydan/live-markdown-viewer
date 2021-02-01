@@ -12,7 +12,7 @@ function App() {
           <Header></Header>
         </Grid.Item>
         <Grid.Item column='1/3'>
-          <Toolbar title="this is a sample title." Listlength={5}></Toolbar>
+          <Toolbar title="this is a sample title." Listlength={6}></Toolbar>
         </Grid.Item>
         <List></List>
         <Grid.Item style={{'backgroundColor': 'black'}}>
