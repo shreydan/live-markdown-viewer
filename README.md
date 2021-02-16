@@ -1,3 +1,3 @@
-# Markdown Notebook
+# Live Markdown Viewer
 
 `npm start`

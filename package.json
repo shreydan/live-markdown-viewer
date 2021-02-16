@@ -1,5 +1,5 @@
 {
-  "name": "markdown-notebook",
+  "name": "live-markdown-viewer",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
