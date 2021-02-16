@@ -13,8 +13,9 @@
     height: 100%;
 }
 .headerComp div {
-    margin: 1% 1% 0;
+    margin: 0 1% 0 1%;
     font-size: 2em;
+    font-weight: 600;
     color: rgb(118, 80, 255);
 }
 .textarea {
@@ -40,6 +41,7 @@
     padding: 2%;
     overflow-y: scroll;
     color: white;
+    background-color: rgb(24, 24, 24);
     overflow-x: scroll;
 }
 
