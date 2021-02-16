@@ -4,7 +4,49 @@
     height: 100%;
     overflow:hidden;
 }
-.tool {
-    background-color: salmon;
+
+.headerComp {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #1d1d1d;
     height: 100%;
+}
+.headerComp div {
+    margin: 1% 1% 0;
+    font-size: 2em;
+    color: rgb(118, 80, 255);
+}
+.textarea {
+    height: 100%;
+    background-color: rgb(36, 36, 36);
+    color: rgb(228, 228, 228);
+    border: none;
+    margin: 0;
+    font-size: 1.5em;
+    padding: 2%;
+    padding-bottom: 2%;
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+}
+.textarea:focus {
+    border: none;
+    outline: none;
+}
+
+.md {
+    margin: 0;
+    height: 100%;
+    padding: 2%;
+    overflow-y: scroll;
+    color: white;
+    overflow-x: scroll;
+}
+
+.md a {
+    color: rgb(157, 78, 247)
+}
+.md img {
+    max-width: 80%;
+    height: auto;
 }
