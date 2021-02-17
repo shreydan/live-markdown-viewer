@@ -1,5 +1,4 @@
 import './App.css';
-import Grid from '@react-css/grid'
 import Markdown from 'markdown-to-jsx'
 import React, { useState } from 'react'
 
@@ -12,20 +11,31 @@ function App() {
     setMD(e.target.value)
   }
 
+  const [viewCycle, setView] = useState(0)
+  // 0: both r visible 1: only textarea visible 2: only MD visible
+  const changeView = () => {
+    if(viewCycle===2) {
+      setView(0)
+    }
+    else {
+      setView(viewCycle+1)
+    }
+    console.log(viewCycle)
+  }
+
   return (
     <div className="App">
-      <Grid columns='1fr 1fr' rows='1fr 11fr' style={{'height': '100%'}}>
-        <Grid.Item column='1/3' className="header">
-          <div className='headerComp'>
+        <div className='headerComp'>
             <div>Markdown</div>
-          </div>
-        </Grid.Item>
-        <textarea onChange={updateMDstring} 
-                  value = {md}
-                  className='textarea'>
-        </textarea>
-        <Markdown className="md">{md}</Markdown>
-      </Grid>
+            <div onClick={changeView} className="viewBtn">Toggle View</div>
+        </div>
+        <div className='view'>
+          {(viewCycle === 0 || viewCycle === 1) && <textarea onChange={updateMDstring} 
+                                                            value = {md}
+                                                            className='textarea'>
+                                                    </textarea>}
+          {(viewCycle === 0 || viewCycle === 2) && <Markdown className="md">{md}</Markdown>}                                          
+        </div>
     </div>
   );
 }
